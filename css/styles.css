@@ -61,7 +61,7 @@ h1{
 }
 
 #their_que{
-	height:100%;
+	height:95%;
 	width:15%;
     background-color:#FF0000;
 	float:left;
@@ -69,21 +69,21 @@ h1{
 
 
 #their_production{
-	height:100%;
+	height:95%;
 	width:35%;
     background-color:#00FF00;
 	float:left;
 }
 
 #their_tactical{
-	height:100%;
+	height:95%;
 	width:35%;
     background-color:#0000FF;
 	float:left;
 }
 
 #their_trun{
-	height:100%;
+	height:95%;
 	width:15%;
     background-color:#FF00FF;
 	float:left;
