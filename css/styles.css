@@ -1,38 +1,39 @@
 /*  Main Styles */
 body{
     background: #222;
+	font-family:Verdana,Arial;
+	font-size:12px;
 }
 header{
     top:0; left:0;
-    height:45px;
-}
-footer {
-    bottom:0; left:0;
-    height:48px;
-    background-color:#c27b00;
-    border-top:1px solid #eee;
-}
-header, footer{
+    height:5%;
     background-color:#deb500;
     padding:0;
     position:absolute;
-    z-index:2;
-    font-size:20px;
     width:100%;
     text-align:center;
     color:#f3f3f3;
     font-weight:bold;
-    text-shadow:0 -1px 0 rgba(0,0,0,0.5);
-    line-height:45px;
 }
+
+footer{
+	left:0;
+	top:5%;
+    height:95%;
+    background-color:#FFFFFF;
+    position:absolute;
+    width:100%;
+}
+
 h1{
-    margin:0;
-    text-transform: uppercase;
+	margin: 0px;
+	margin-top: 1px;
+	font-size:1em;
 }
 #wrapper {
     position:absolute;
     z-index:1;
-    top:45px; bottom:48px; left:0;
+    top:5%; bottom:0%; left:0;
     width:100%;
     overflow:auto;
 }
@@ -42,3 +43,49 @@ h1{
     width:100%;
     padding:0;
 }
+
+/**********lalala************/
+
+#border-right{
+	width:1px;
+    background-color:#000;
+	height:100%;
+	float:right;
+}
+
+#border-left{
+	width:1px;
+    background-color:#000;
+	height:100%;
+	float:left;
+}
+
+#their_que{
+	height:100%;
+	width:15%;
+    background-color:#FF0000;
+	float:left;
+}
+
+
+#their_production{
+	height:100%;
+	width:35%;
+    background-color:#00FF00;
+	float:left;
+}
+
+#their_tactical{
+	height:100%;
+	width:35%;
+    background-color:#0000FF;
+	float:left;
+}
+
+#their_trun{
+	height:100%;
+	width:15%;
+    background-color:#FF00FF;
+	float:left;
+}
+
