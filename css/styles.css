@@ -3,6 +3,7 @@ body{
     background: #222;
 	font-family:Verdana,Arial;
 	font-size:12px;
+	overflow:hidden;
 }
 header{
     top:0; left:0;
@@ -61,7 +62,7 @@ h1{
 }
 
 #their_que{
-	height:95%;
+	height:100%;
 	width:15%;
     background-color:#FF0000;
 	float:left;
@@ -69,21 +70,21 @@ h1{
 
 
 #their_production{
-	height:95%;
+	height:100%;
 	width:35%;
     background-color:#00FF00;
 	float:left;
 }
 
 #their_tactical{
-	height:95%;
+	height:100%;
 	width:35%;
     background-color:#0000FF;
 	float:left;
 }
 
 #their_trun{
-	height:95%;
+	height:100%;
 	width:15%;
     background-color:#FF00FF;
 	float:left;
