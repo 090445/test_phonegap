@@ -3,7 +3,6 @@ body{
     background: #222;
 	font-family:Verdana,Arial;
 	font-size:12px;
-	overflow:hidden;
 }
 header{
     top:0; left:0;
@@ -45,7 +44,7 @@ h1{
     padding:0;
 }
 
-/**********lalala************/
+/**********design************/
 
 #border-right{
 	width:1px;
@@ -90,3 +89,16 @@ h1{
 	float:left;
 }
 
+/***********stuff**********/
+.btn{
+	width:90%;
+	margin-left:5%;
+	float:left;
+}
+button{
+    background-color:#FF00FF;
+	width:100%;
+	height:100%;
+	
+	float:left;
+}

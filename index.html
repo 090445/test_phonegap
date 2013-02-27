@@ -5,9 +5,31 @@
         <link rel="stylesheet" href="css/styles.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<script src="js/phonegap.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script>
 			document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
 		</script>
+		
+		<script type="text/javascript">//<![CDATA[ 
+			$(window).load(function(){
+				var cw = $('.btn').width();
+				$('.btn').css({
+					'height': cw + 'px'
+				});
+			
+				var mleft = $('.btn').margin-left();
+				$('.btn').css({
+					'.margin-top': mleft + 'px'
+				});
+			});
+			
+			
+			//]]>  
+
+		</script>
+
+
 	</head>
 
 	
@@ -17,6 +39,9 @@
 		</header>
 		<footer>
 			<div id="their_que">
+				<div class="btn">
+						<button  onclick="">Capture Photo</button>
+				</div>
 						<div id="border-right"></div>
 			</div>
 			<div id="their_production">
