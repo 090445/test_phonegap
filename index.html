@@ -6,27 +6,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<script src="js/phonegap.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script>
 			document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
 		</script>
+		<script type="text/javascript">
+			var myScroll;
+			function loaded() {
+				myScroll = new iScroll('wrapper', { hScrollbar: false, vScrollbar: false });
+			}
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+		</script>
 		
-		<script type="text/javascript">//<![CDATA[ 
+		<script type="text/javascript">
 			$(window).load(function(){
-				var cw = $('.btn').width();
-				$('.btn').css({
-					'height': cw + 'px'
+				var qw = $('.que_btn').width();
+				$('.que_btn').css({
+					'height': qw + 'px'
 				});
-			
-				var mleft = $('.btn').margin-left();
-				$('.btn').css({
-					'.margin-top': mleft + 'px'
+				var tw = $('.turn_btn').width();
+				$('.turn_btn').css({
+					'height': tw + 'px'
 				});
 			});
-			
-			
-			//]]>  
-
 		</script>
 
 
@@ -39,18 +43,41 @@
 		</header>
 		<footer>
 			<div id="their_que">
-				<div class="btn">
-						<button  onclick="">Capture Photo</button>
+				<div id="border-right"></div>
+				<h2>Queue:</h2>
+				<div id="wrapper" style="overflow: hidden;">
+					<div id="scroller" style="-webkit-transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px;">
+						<ul id="thelist">
+							<div class="que_btn"><button onclick="">Capture Photo</button></div>
+							<div class="que_btn"><button onclick="">Capture Photo</button></div>
+							<div class="que_btn"><button onclick="">Capture Photo</button></div>
+							<div class="que_btn"><button onclick="">Capture Photo</button></div>
+							<div class="que_btn"><button onclick="">Capture Photo</button></div>
+						</ul>
+					</div>
 				</div>
-						<div id="border-right"></div>
 			</div>
+			
 			<div id="their_production">
-						<div id="border-right"></div>
+				<div id="border-right"></div>
+				<h2>Produduce Units:</h2>
+				<div class="prod_btn"><button onclick="">Capture Photo</button></div>
+				<div class="prod_btn"><button onclick="">Capture Photo</button></div>
+				<div class="prod_btn"><button onclick="">Capture Photo</button></div>
 			</div>
+			
 			<div id="their_tactical">
-						<div id="border-right"></div>
+				<div id="border-right"></div>
+				<h2>Tactical Units:</h2>
+				<div class="tact_btn"><button onclick="">Capture Photo</button></div>
+				<div class="tact_btn"><button onclick="">Capture Photo</button></div>
+				<div class="tact_btn"><button onclick="">Capture Photo</button></div>				
 			</div>
+			
 			<div id="their_trun">
+				<h2>Turn:</h2>
+				<div class="turn_btn"><button onclick="">Capture Photo</button></div>
+				<div class="turn_btn"><button onclick="">Capture Photo</button></div>
 			</div>
 		</footer>
 	</body>
