@@ -141,12 +141,18 @@ h2{
 
 .prod_btn{
 	width:91%;
-	height:26%;
+	height:25%;
 	margin-left:2.5%;
 	margin-top:1.7%;
 	float:left;
 	padding:2%;
     background-color:#FFFFFF;
+}
+
+.prod_btn_img{
+	width:31%;
+	height:100%;
+	float:left;
 }
 
 .tact_btn{
@@ -204,16 +210,16 @@ button{
 	margin:0px;
 }
 
-.prod_btn img {
-    width:auto;
+.prod_btn_img img {
     height:100%;
+    width:auto;
 	float:left;
 	margin:0px;
 }
 
 .tact_btn img {
-    width:auto;
     height:100%;
+    width:auto;
 	float:left;
 	margin:0px;
 }
