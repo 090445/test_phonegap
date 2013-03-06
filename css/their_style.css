@@ -211,7 +211,7 @@ button{
 }
 
 .prod_btn_img img {
-    height:100%;
+    height:auto;
     width:100%;
 	float:left;
 	margin:0px;
