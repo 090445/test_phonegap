@@ -40,12 +40,14 @@ h2{
 	margin-left: 5px;
 	font-size:1em;
 	color:#000;
+	text-decoration: none;
 }
 
 p{
 	margin-left: 5px;
 	font-size:1em;
 	color:#000;
+	text-decoration: none;
 }
 
 h3{
@@ -55,6 +57,16 @@ h3{
 	font-size:1em;
 	float: right;
 }
+
+h4{
+	margin: 0px;
+	margin-top: 1px;
+	margin-left: 5px;
+	font-size:1.8em;
+	color:#FFF;
+	text-decoration: none;
+}
+
 
 
 #wrapper {
@@ -205,11 +217,12 @@ h3{
 
 
 button{
-    background-color:#FF00FF;
-	width:100%;
+    background-color:#20CC20;
+	width:30%;
 	height:100%;
-	float:left;
-	padding:0px;
+	left:10px;
+	bottom:10px;
+	padding:10px;
 }
 
 #wrapper {

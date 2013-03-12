@@ -50,16 +50,28 @@ jQuery(function ($) {
 	});
 	
 	
-	$('#basic-modal .basic1').click(function (e) {
-		$('#basic1-modal-content').modal();
+	$('#basic-modal .board_unit1').click(function (e) {
+		$('#board_unit1').modal();
 
 		return false;
 	});
 	
-	
-	$('#basic-modal .basic2').click(function (e) {
-		$('#basic2-modal-content').modal();
+	$('#basic-modal .board_unit2').click(function (e) {
+		$('#board_unit2').modal();
 
 		return false;
 	});
+	
+	$('#basic-modal .barrack_unit1').click(function (e) {
+		$('#barrack_unit1').modal();
+
+		return false;
+	});
+	
+	$('#basic-modal .barrack_unit2').click(function (e) {
+		$('#barrack_unit2').modal();
+
+		return false;
+	});
+
 });

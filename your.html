@@ -56,8 +56,8 @@
 				<div id="wrapper" style="overflow: hidden;">
 					<div id="scroller" style="-webkit-transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) scale(1) translateZ(0px);">
 						<ul id="thelist">
-							<a href='#' class='basic1'><div class="unit_btn"><img src="img/unit_3.png"/></div></a>
-							<a href='#' class='basic2'><div class="unit_btn"><img src="img/unit_2.png"/></div></a>
+							<a href='#' class='board_unit1'><div class="unit_btn"><img src="img/unit_3.png"/></div></a>
+							<a href='#' class='board_unit2'><div class="unit_btn"><img src="img/unit_2.png"/></div></a>
 							<div class="unit_btn"><img src="img/unit_2.png"/></div>
 							<div class="unit_btn"><img src="img/unit_1.png"/></div>
 							<div class="unit_btn"><img src="img/unit_3.png"/></div>
@@ -81,8 +81,8 @@
 				<div id="wrapper2" style="overflow: hidden;">
 					<div id="scroller2" style="-webkit-transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) scale(1) translateZ(0px);">
 						<ul id="thelist">
-							<div class="unit_btn"><img src="img/unit_3.png"/></div>
-							<div class="unit_btn"><img src="img/unit_2.png"/></div>
+							<a href='#' class='barrack_unit1'><div class="unit_btn"><img src="img/unit_3.png"/></div></a>
+							<a href='#' class='barrack_unit2'><div class="unit_btn"><img src="img/unit_2.png"/></div></a>
 							<div class="unit_btn"><img src="img/unit_2.png"/></div>
 							<div class="unit_btn"><img src="img/unit_1.png"/></div>
 							<div class="unit_btn"><img src="img/unit_3.png"/></div>
@@ -116,16 +116,30 @@
 		
 	</div>
 		<!-- modal content -->
-		<div id="basic1-modal-content">
-			For this demo, SimpleModal is using this "hidden" data for its content. You can also populate the modal dialog with an AJAX response, standard HTML or DOM element(s).
-			<button>hoi</button>
+		<div id="board_unit1">
+			<h4>Unit Information</h4>
+			<p>some text</p>
+			<button class="simplemodal-close">Ok</button>
 		</div>
 		
-		<div id="basic2-modal-content">
-			For this demo, SimpleModal is using this "hidden" data for its content. You can also populate the modal dialog with an AJAX response, standard HTML or DOM element(s).
-			<button>hoi2</button>
+		<div id="board_unit2">
+			<h4>Unit Information</h4>
+			<p>some text</p>
+			<button class="simplemodal-close">Ok</button>
 		</div>
-
+		
+		<div id="barrack_unit1">
+			<h4>Unit Information</h4>
+			<p>some text</p>
+			<button class="simplemodal-close">Ok</button>
+		</div>
+		
+		<div id="barrack_unit2">
+			<h4>Unit Information</h4>
+			<p>some text</p>
+			<button class="simplemodal-close">Ok</button>
+		</div>
+		
 		<!-- preload the images -->
 		<div style='display:none'>
 			<img src='img/basic/x.png' alt='' />
