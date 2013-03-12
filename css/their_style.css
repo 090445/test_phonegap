@@ -34,6 +34,20 @@ h1{
 	float: left;
 }
 
+h2{
+	margin: 0px;
+	margin-top: 1px;
+	margin-left: 5px;
+	font-size:1em;
+	color:#000;
+}
+
+p{
+	margin-left: 5px;
+	font-size:1em;
+	color:#000;
+}
+
 h3{
 	margin: 0px;
 	margin-top: 2px;
@@ -42,12 +56,7 @@ h3{
 	float: right;
 }
 
-h2{
-	margin: 0px;
-	margin-top: 1px;
-	margin-left: 5px;
-	font-size:1em;
-}
+
 #wrapper {
     position:absolute;
     z-index:1;
@@ -155,6 +164,13 @@ h2{
 	float:left;
 }
 
+.prod_btn_txt_box{
+	margin-left:2%;
+	width:67%;
+	height:100%;
+	float:left;
+}
+
 .tact_btn{
 	width:90%;
 	height:26%;
@@ -163,6 +179,19 @@ h2{
 	float:left;
 	padding:2%;
     background-color:#FFFFFF;
+}
+
+.tact_btn_img{
+	width:43%;
+	height:100%;
+	float:left;
+}
+
+.tact_btn_txt_box{
+	margin-left:2%;
+	width:55%;
+	height:100%;
+	float:left;
 }
 
 .turn_btn{
@@ -217,9 +246,9 @@ button{
 	margin:0px;
 }
 
-.tact_btn img {
-    height:100%;
-    width:auto;
+.tact_btn_img img {
+    height:auto;
+    width:100%;
 	float:left;
 	margin:0px;
 }
