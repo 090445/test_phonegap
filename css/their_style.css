@@ -99,13 +99,6 @@ h4{
 	float:left;
 }
 
-#their_que{
-	height:100%;
-	width:15%;
-    background-color:#a8a8a8;
-	float:left;
-}
-
 
 #their_production{
 	height:100%;
@@ -116,14 +109,14 @@ h4{
 
 #their_tactical{
 	height:100%;
-	width:30%;
+	width:40%;
     background-color:#a8a8a8;
 	float:left;
 }
 
 #their_trun{
 	height:100%;
-	width:15%;
+	width:20%;
     background-color:#a8a8a8;
 	float:left;
 }
@@ -151,18 +144,9 @@ h4{
 }
 
 /***********stuff**********/
-.que_btn{
-	width:86%;
-	margin-left:5%;
-	margin-top:4.5%;
-	float:left;
-	padding:2%;
-    background-color:#FFFFFF;
-}
-
 .prod_btn{
 	width:91%;
-	height:25%;
+	height:26%;
 	margin-left:2.5%;
 	margin-top:1.7%;
 	float:left;
@@ -171,37 +155,37 @@ h4{
 }
 
 .prod_btn_img{
-	width:31%;
+	width:33%;
 	height:100%;
 	float:left;
 }
 
 .prod_btn_txt_box{
 	margin-left:2%;
-	width:67%;
+	width:65%;
 	height:100%;
 	float:left;
 }
 
 .tact_btn{
-	width:90%;
+	width:91%;
 	height:26%;
-	margin-left:3%;
-	margin-top:2.3%;
+	margin-left:2.5%;
+	margin-top:1.7%;
 	float:left;
 	padding:2%;
     background-color:#FFFFFF;
 }
 
 .tact_btn_img{
-	width:43%;
+	width:33%;
 	height:100%;
 	float:left;
 }
 
 .tact_btn_txt_box{
 	margin-left:2%;
-	width:55%;
+	width:65%;
 	height:100%;
 	float:left;
 }
@@ -246,12 +230,6 @@ button{
 }
 
 
-.que_btn img {
-    width:100%;
-    height:100%;
-	margin:0px;
-}
-
 .prod_btn_img img {
     height:auto;
     width:100%;
@@ -267,7 +245,7 @@ button{
 }
 
 .turn_btn img {
-    width:auto;
+    width:100%;
     height:100%;
 	float:left;
 	margin:0px;
@@ -275,7 +253,7 @@ button{
 
 .your_turn_btn{
 	width:86%;
-	margin-top:20%;
+	margin-top:4%;
 	margin-left:5%;
 	text-align:center;
 	padding:2%;

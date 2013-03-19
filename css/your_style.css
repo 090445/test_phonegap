@@ -96,53 +96,17 @@ h4{
 	float:left;
 }
 
-#their_que{
-	height:100%;
-	width:15%;
-    background-color:#a8a8a8;
-	float:left;
-}
-
-
-#their_production{
-	height:100%;
-	width:40%;
-    background-color:#a8a8a8;
-	float:left;
-}
-
-#their_tactical{
-	height:100%;
-	width:30%;
-    background-color:#a8a8a8;
-	float:left;
-}
-
-#their_trun{
-	height:100%;
-	width:15%;
-    background-color:#a8a8a8;
-	float:left;
-}
-
 #your_units{
 	height:100%;
-	width:42.5%;
+	width:80%;
     background-color:#a8a8a8;
 	float:left;
 }
 
-
-#your_baracks{
-	height:100%;
-	width:42.5%;
-    background-color:#a8a8a8;
-	float:left;
-}
 
 #your_turn{
 	height:100%;
-	width:15%;
+	width:20%;
     background-color:#a8a8a8;
 	float:left;
 }
@@ -200,16 +164,10 @@ button{
 #wrapper{
 	left:0;
 	top:4.5%;
-	width:42.5%;
+	width:80%;
 	float:left;
 }
 
-#wrapper2{
-	left:42.5%;
-	top:4.5%;
-	width:42.5%;
-	float:left;
-}
 
 
 #scroller {
@@ -272,7 +230,7 @@ button{
 
 .your_turn_btn{
 	width:86%;
-	margin-top:20%;
+	margin-top:4%;
 	margin-left:5%;
 	text-align:center;
 	padding:2%;
@@ -283,11 +241,11 @@ button{
 }
 
 .unit_btn{
-	width:25.5%;
-	margin-left:3%;
-	margin-top:3%;
+	width:15.5%;
+	margin-left:2%;
+	margin-top:2%;
 	float:left;
-	padding:2%;
+	padding:1%;
     background-color:#FFFFFF;
 }
 
