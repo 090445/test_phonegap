@@ -43,12 +43,6 @@ h2{
 	text-decoration: none;
 }
 
-p{
-	margin-left: 5px;
-	font-size:1em;
-	color:#000;
-	text-decoration: none;
-}
 
 h3{
 	margin: 0px;
@@ -67,7 +61,12 @@ h4{
 	text-decoration: none;
 }
 
-
+p{
+	margin-left: 5px;
+	font-size:1em;
+	color:#000;
+	text-decoration: none;
+}
 
 #wrapper {
     position:absolute;
@@ -76,6 +75,7 @@ h4{
     width:100%;
     overflow:auto;
 }
+
 #main-content {
     position:absolute;
     z-index:1;
@@ -99,7 +99,7 @@ h4{
 	float:left;
 }
 
-
+/*********** Their *********/
 #their_production{
 	height:100%;
 	width:40%;
@@ -121,29 +121,23 @@ h4{
 	float:left;
 }
 
+/********* Your *********/
 #your_units{
 	height:100%;
-	width:45%;
+	width:80%;
     background-color:#a8a8a8;
 	float:left;
 }
 
-
-#your_baracks{
-	height:100%;
-	width:40%;
-    background-color:#a8a8a8;
-	float:left;
-}
 
 #your_turn{
 	height:100%;
-	width:15%;
+	width:20%;
     background-color:#a8a8a8;
 	float:left;
 }
 
-/***********stuff**********/
+/*********** Produce **********/
 .prod_btn{
 	width:91%;
 	height:26%;
@@ -167,6 +161,14 @@ h4{
 	float:left;
 }
 
+.prod_btn_img img {
+    height:auto;
+    width:100%;
+	float:left;
+	margin:0px;
+}
+
+/************ Tactical ********/
 .tact_btn{
 	width:91%;
 	height:26%;
@@ -190,6 +192,14 @@ h4{
 	float:left;
 }
 
+.tact_btn_img img {
+    height:auto;
+    width:100%;
+	float:left;
+	margin:0px;
+}
+
+/******** Turn ******/
 .turn_btn{
 	width:86%;
 	margin-left:5%;
@@ -197,51 +207,6 @@ h4{
 	float:left;
 	padding:2%;
     background-color:#FFFFFF;
-}
-
-
-button{
-    background-color:#20CC20;
-	width:30%;
-	height:100%;
-	left:10px;
-	bottom:10px;
-	padding:10px;
-}
-
-#wrapper {
-	left:0;
-	top:4.5%;
-	width:15%;
-}
-
-#scroller {
-	width:100%;
-	padding:0;
-}
-
-#scroller ul {
-	list-style:none;
-	padding:0;
-	margin:0;
-	width:100%;
-	text-align:left;
-	overflow:hidden;
-}
-
-
-.prod_btn_img img {
-    height:auto;
-    width:100%;
-	float:left;
-	margin:0px;
-}
-
-.tact_btn_img img {
-    height:auto;
-    width:100%;
-	float:left;
-	margin:0px;
 }
 
 .turn_btn img {
@@ -263,10 +228,11 @@ button{
 	float:left;
 }
 
+/******* unit *******/
 .unit_btn{
 	width:25.5%;
 	margin-left:3%;
-	margin-top:3%;
+	margin-bottom:3%;
 	float:left;
 	padding:2%;
     background-color:#FFFFFF;
@@ -277,3 +243,84 @@ button{
     height:100%;
 	margin:0px;
 }
+
+/**** extra ******/
+button{
+    background-color:#20CC20;
+	width:30%;
+	height:100%;
+	left:10px;
+	bottom:10px;
+	padding:10px;
+}
+
+#wrapper {
+	left:0;
+	top:5%;
+	width:80%;
+	float:left;
+}
+
+#scroller {
+	width:100%;
+	padding:0;
+	float:left;
+}
+
+#scroller ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:left;
+	overflow:hidden;
+}
+
+
+/************** BAsic.css **********/
+#basic-modal-content {display:none;}
+
+#basic2-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+
+/* Container */
+#simplemodal-container {
+	height:70%; 
+	width:70%; 
+	color:#bbb; 
+	background-color:#777; 
+	border:4px solid #bbb; 
+	padding:12px;
+}
+#simplemodal-container .simplemodal-data {
+	padding:8px;
+}
+#simplemodal-container code {
+	background:#141414;
+	border-left:3px solid #65B43D;
+	color:#bbb;
+	display:block;
+	font-size:12px;
+	margin-bottom:12px;
+	padding:4px 6px 6px;
+}
+#simplemodal-container a {
+	color:#ddd;
+}
+#simplemodal-container a.modalCloseImg {
+	background:url(img/basic/x.png) no-repeat;
+	width:25px;
+	height:29px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top:-15px;
+	right:-16px;
+	cursor:pointer;
+}
+#simplemodal-container h3 {
+	color:#84b8d9;
+}
+

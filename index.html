@@ -1,129 +1,220 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-		<title>Their Turn</title>
-        <link rel="stylesheet" href="css/their_style.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<script src="js/phonegap.js"></script>
-		<script type="text/javascript" src="js/iscroll.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript">
-			var myScroll;
-			function loaded() {
-				myScroll = new iScroll('wrapper', { hScrollbar: false, vScrollbar: false });
-			}
-			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
-		</script>
-		
-		<script type="text/javascript">
-			$(window).load(function(){
-				var qw = $('.que_btn').width();
-				$('.que_btn').css({
-					'height': qw + 'px'
-				});
-				var tw = $('.turn_btn').width();
-				$('.turn_btn').css({
-					'height': tw + 'px'
-				});
-			});
-		</script>
-		
-		<link type='text/css' href='css/basic.css' rel='stylesheet' media='screen' />
-		<script type='text/javascript' src='js/jquery.simplemodal.js'></script>
-		<script type='text/javascript' src='js/basic.js'></script>
-		
-	</head>
+<head>
+<title>Test</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="js/phonegap.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.simplemodal.js'></script>
+<script type='text/javascript' src='js/basic.js'></script>
+<script type="text/javascript">
+var myScroll;
+	function loaded() {
+		myScroll = new iScroll('wrapper', { hScrollbar: false, vScrollbar: false });
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+</script>
 
+<script type="text/javascript">
+	$(window).load(function(){
+		var qw = $('.unit_btn').width();
+		$('.unit_btn').css({
+			'height': qw + 'px'
+		});
+		var tw = $('.turn_btn').width();
+		$('.turn_btn').css({
+			'height': tw + 'px'
+		});
+	});
+</script>
+<script type = "text/javascript">
+
+var divArray = 
+["page1", "page2"]; //holds the div data, for showing and hiding the next div.
+function getInput(form, id){
+	var tempId = id;
+	nextPage(tempId);
+}
+
+function nextPage(id)
+{
+	var obj = document.getElementById(id);
+	obj.style.display = "block"; //next page is shown
 	
-	<body>
-	<div id='container'>
-	<div id='content'>
-	<div id='basic-modal'>
-	
-		<header>
-			<h1>Money: 10.000</h1><h3>Turn: 8</h3>
-		</header>
-		
-		<footer>
-			<div id="their_production">
-				<div id="border-right"></div>
-				<h2>Produduce Units:</h2>
-				<a href='#' class='prod1'>
-					<div class="prod_btn">
-						<div class="prod_btn_img"><img src="img/unit_1.png"/></div>
-						<div class="prod_btn_txt_box">
-							<h2>Infantry Unit</h2>
-							<p>Cost: 100</p>
-							<p>Turns: 1</p>
-						</div>
-					</div>
-				</a>
-				<a href='#' class='prod2'>
-					<div class="prod_btn">
-						<div class="prod_btn_img"><img src="img/unit_2.png"/></div>
-						<div class="prod_btn_txt_box">
-							<h2>Tank Unit</h2>
-							<p>Cost: 300</p>
-							<p>Turns: 2</p>
-						</div>
-					</div>
-				</a>
-				<a href='#' class='prod3'>
-					<div class="prod_btn">
-						<div class="prod_btn_img"><img src="img/unit_3.png"/></div>
-						<div class="prod_btn_txt_box">
-							<h2>Air Unit</h2>
-							<p>Cost: 500</p>
-							<p>Turns: 3</p>
-						</div>
-					</div>
-				</a>
+	for(var i = 0; i < divArray.length; i++)
+	{
+		var elem = document.getElementById(divArray[i]);
+		if(elem != obj)
+		{
+			elem.style.display = "none";
+		}
+	}
+}
+</script>
+</head>
+
+
+
+
+<body>
+<div id='container'>
+<div id='content'>
+<div id='basic-modal'>
+
+<div style = "display:block" id = "page1">
+	<header>
+		<h1>Money: 10.000</h1><h3>Turn: 8</h3>
+	</header>
+	<footer>
+		<div id="your_units">
+			<div id="border-right"></div>
+			<h2>Units:</h2>
+			<div id="wrapper" style="overflow: hidden;">
+				<div id="scroller" style="-webkit-transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) scale(1) translateZ(0px);">
+					<ul id="thelist">
+						<a href='#' class='board_unit1'><div class="unit_btn"><img src="img/unit_3.png"/></div></a>
+						<a href='#' class='board_unit2'><div class="unit_btn"><img src="img/unit_2.png"/></div></a>
+						<div class="unit_btn"><img src="img/unit_2.png"/></div>
+						<div class="unit_btn"><img src="img/unit_1.png"/></div>
+						<div class="unit_btn"><img src="img/unit_3.png"/></div>
+						<div class="unit_btn"><img src="img/unit_1.png"/></div>
+						<div class="unit_btn"><img src="img/unit_1.png"/></div>
+						<div class="unit_btn"><img src="img/unit_3.png"/></div>
+						<div class="unit_btn"><img src="img/unit_2.png"/></div>
+						<div class="unit_btn"><img src="img/unit_2.png"/></div>
+						<div class="unit_btn"><img src="img/unit_1.png"/></div>
+						<div class="unit_btn"><img src="img/unit_3.png"/></div>
+						<div class="unit_btn"><img src="img/unit_1.png"/></div>
+						<div class="unit_btn"><img src="img/unit_1.png"/></div>
+					</ul>
+				</div>
 			</div>
+		</div>
 			
-			<div id="their_tactical">
+			
+			<div id="your_turn">
 				<div id="border-right"></div>
-				<h2>Tactical Units:</h2>
-				<a href='#' class='tact1'>
-					<div class="tact_btn">
-						<div class="tact_btn_img"><img src="img/tact_1.png"/></div>
-						<div class="tact_btn_txt_box">
-							<h2>Mortar</h2>
-							<p>Cost: 200</p>
-						</div>
-					</div>
-				</a>
-				<a href='#' class='tact2'>
-					<div class="tact_btn">
-						<div class="tact_btn_img"><img src="img/tact_2.png"/></div>
-						<div class="tact_btn_txt_box">
-							<h2>Saboteur</h2>
-							<p>Cost: 200</p>
-						</div>
-					</div>
-				</a>
-				<a href='#' class='tact3'>
-					<div class="tact_btn">
-						<div class="tact_btn_img"><img src="img/tact_3.png"/></div>
-						<div class="tact_btn_txt_box">
-							<h2>Bomber</h2>
-							<p>Cost: 800</p>
-						</div>
-					</div>
-				</a>		
-			</div>
-			
-			<div id="their_trun">
 				<h2>Turn:</h2>
-				<a href="your.html"><div class="your_turn_btn">Go To Your Turn</div></a>
-				<div class="turn_btn"><img src="img/user_1.png"/></div>
+				<div class="your_turn_btn" ><input name="button" type="button" value="End Turn" onClick="getInput(this.form, 'page2')"/></div>
 				<div class="turn_btn"><img src="img/user_2.png"/></div>
+				<div class="turn_btn"><img src="img/user_1.png"/></div>	
 			</div>
 			
-		</footer>
-	</div>
-		<!-- modal content -->
+			
+			
+	</footer>
+</div>
+<div style = "display:none" id = "page2">
+	<header>
+		<h1>Money: 10.000</h1><h3>Turn: 8</h3>
+	</header>
+		
+	<footer>
+		<div id="their_production">
+			<div id="border-right"></div>
+			<h2>Produduce Units:</h2>
+			
+			<a href='#' class='prod1'>
+				<div class="prod_btn">
+					<div class="prod_btn_img"><img src="img/unit_1.png"/></div>
+					<div class="prod_btn_txt_box">
+						<h2>Infantry Unit</h2>
+						<p>Cost: 100</p>
+						<p>Turns: 1</p>
+					</div>
+				</div>
+			</a>
+			
+			<a href='#' class='prod2'>
+				<div class="prod_btn">
+					<div class="prod_btn_img"><img src="img/unit_2.png"/></div>
+					<div class="prod_btn_txt_box">
+						<h2>Tank Unit</h2>
+						<p>Cost: 300</p>
+						<p>Turns: 2</p>
+					</div>
+				</div>
+			</a>
+			
+			<a href='#' class='prod3'>
+				<div class="prod_btn">
+					<div class="prod_btn_img"><img src="img/unit_3.png"/></div>
+					<div class="prod_btn_txt_box">
+						<h2>Air Unit</h2>
+						<p>Cost: 500</p>
+						<p>Turns: 3</p>
+					</div>
+				</div>
+			</a>
+		</div>
+			
+		<div id="their_tactical">
+			<div id="border-right"></div>
+			<h2>Tactical Units:</h2>
+			
+			<a href='#' class='tact1'>
+				<div class="tact_btn">
+					<div class="tact_btn_img"><img src="img/tact_1.png"/></div>
+					<div class="tact_btn_txt_box">
+						<h2>Mortar</h2>
+						<p>Cost: 200</p>
+					</div>
+				</div>
+			</a>
+			
+			<a href='#' class='tact2'>
+				<div class="tact_btn">
+					<div class="tact_btn_img"><img src="img/tact_2.png"/></div>
+					<div class="tact_btn_txt_box">
+						<h2>Saboteur</h2>
+						<p>Cost: 200</p>
+					</div>
+				</div>
+			</a>
+			
+			<a href='#' class='tact3'>
+				<div class="tact_btn">
+					<div class="tact_btn_img"><img src="img/tact_3.png"/></div>
+					<div class="tact_btn_txt_box">
+						<h2>Bomber</h2>
+						<p>Cost: 800</p>
+					</div>
+				</div>
+			</a>		
+			
+		</div>
+			
+		<div id="their_trun">
+			<h2>Turn:</h2>
+			<div class="your_turn_btn"><input name="button" type="button" value="Your Turn" onClick="getInput(this.form, 'page1')"/></div>
+			<div class="turn_btn"><img src="img/user_1.png"/></div>
+			<div class="turn_btn"><img src="img/user_2.png"/></div>
+		</div>
+			
+	</footer>
+</div>
+
+
+
+
+</div>
+
+		<!-- units on the board -->
+		<div id="board_unit1">
+			<h4>Unit Information</h4>
+			<p>some text</p>
+			<button class="simplemodal-close">Ok</button>
+		</div>
+		
+		<div id="board_unit2">
+			<h4>Unit Information</h4>
+			<p>some text</p>
+			<button class="simplemodal-close">Ok</button>
+		</div>
+		
+		<!-- Produce units -->
 		<div id="prod1">
 			<h4>Produce Infantry Unit</h4>
 			<p>some text</p>
@@ -139,6 +230,8 @@
 			<p>some text</p>
 			<button class="simplemodal-close">Confirm</button>
 		</div>
+		
+		<!-- tactical attacks -->
 		<div id="tact1">
 			<h4>Use Mortar</h4>
 			<p>some text</p>
@@ -154,13 +247,15 @@
 			<p>some text</p>
 			<button class="simplemodal-close">Confirm</button>
 		</div>
-
+		
 		<!-- preload the images -->
 		<div style='display:none'>
 			<img src='img/basic/x.png' alt='' />
 		</div>
-	</div>
-	</div>
-	</body>
 
+
+
+</div>
+</div>
+</body>
 </html>
